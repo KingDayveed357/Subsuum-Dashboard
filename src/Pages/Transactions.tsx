@@ -67,7 +67,7 @@ const Transactions: React.FC = () => {
 
   return (
     <Layout>
-      <section className="p-4 bg-white dark:bg-white">
+      <section className="flex flex-col justify-center  p-3   bg-transparent">
         <div className='mb-8'>
           <label className="input border-[#e7edf8] bg-[#F7F9FD] input-bordered w-full md:w-52 flex items-center gap-1">
             <span><IoFilterOutline /></span>
@@ -128,9 +128,9 @@ const Transactions: React.FC = () => {
                     </div>
                   </td>
                   <th>
-                    <div className="dropdown dropdown-end ">
+                    <div className="dropdown  dropdown-end ">
                       <div tabIndex={0} role="button" className="btn text-[#4169E1] hover:bg-[#bfc4cf] bg-[#EFF3FB] btn-ghost btn-sm m-1">Open</div>
-                      <ul tabIndex={0} className="mt-5 dropdown-content cyan-text menu bg-base-100 rounded-md z-[1] w-36  p-2 shadow">
+                      <ul tabIndex={0} className="mt-5 bg-transparent dropdown-content cyan-text menu bg-base-100 rounded-md z-[1] w-36  p-2 shadow">
                         <a className='flex p-2 gap-2 rounded-md hover:bg-base-300' onClick={() => openModal(transaction)}> <LuEye className='my-auto' />View </a>
                         <a className='flex p-2 gap-2 rounded-md hover:bg-base-300'> <RiDeleteBin5Line className='my-auto' />Delete </a>
                       </ul>
@@ -143,8 +143,8 @@ const Transactions: React.FC = () => {
         </div>
 
         {/* Modal */}
-        <dialog ref={modalRef} id="my_modal_3" className="modal">
-          <div className="modal-box w-11/12 max-w-2xl">
+        <dialog ref={modalRef} id="my_modal_3" className="modal bg-transparent">
+          <div className="modal-box bg-transparent w-11/12 max-w-2xl">
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onClick={closeModal}>✕</button>
             <h3 className="font-bold text-lg">Transaction Details</h3>
             {selectedTransaction && (

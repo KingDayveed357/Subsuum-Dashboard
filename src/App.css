@@ -10,7 +10,7 @@
 }
 
 .dashboard-card{
- @apply  border-2 border-[#D7E1F4] bg-base-100 w-auto xl:w-[27rem] p-4 rounded-2xl
+ @apply  border-2 border-[#D7E1F4] bg-base-100 w-auto xl:w-[27rem] p-4 rounded-2xl bg-transparent
 }
 
 .blue-text{

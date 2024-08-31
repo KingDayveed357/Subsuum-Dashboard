@@ -20,7 +20,7 @@ const Dashboard: React.FC = () => {
       {/* Page content goes here */}
       <section className='xl:flex grid md:grid-cols-2 gap-8 grid-cols-1 grid-col-reverse lg:grid-row-reverse'>
         <div className='space-y-8'>
-          <div className="dashboard-card">
+          <div className="dashboard-card bg-transparent">
             <div className="flex justify-between">
               <div>
                 <h2 className="text-[16px] font-normal">Wallet Balance</h2>
@@ -30,7 +30,7 @@ const Dashboard: React.FC = () => {
             </div>
           </div>
 
-          <div className="dashboard-card">
+          <div className="dashboard-card bg-transparent">
             <div className="flex justify-between">
               <div>
                 <h2 className="">Referral</h2>

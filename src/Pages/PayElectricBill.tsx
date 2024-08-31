@@ -2,7 +2,11 @@ import Layout from '../components/Layout';
 
 const PayElectricBill = () => {
   return (
-    <Layout>Coming Soon!!</Layout>
+    <Layout> 
+      <section className='flex flex-col justify-center items-center p-4 sm:p-8'>
+    <h1>Coming Soon!!</h1>
+    </section>
+    </Layout>
   )
 }
 

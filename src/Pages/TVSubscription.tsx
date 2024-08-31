@@ -4,8 +4,9 @@ import Layout from '../components/Layout';
 const TVSubscription: React.FC = () => {
   return (
     <Layout>
+      <section className='flex flex-col justify-center items-center p-4 sm:p-8'>
       <h1>Coming Soon!!</h1>
-      {/* Page content here */}
+      </section>
     </Layout>
   )
 }

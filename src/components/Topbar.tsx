@@ -43,7 +43,7 @@ const Topbar: React.FC<TopbarProps> = ({ pageTitle }) => {
             {/* dropdown */}
             <div className="dropdown dropdown-end  ">
   <div tabIndex={0} role='button' ><FiUser className='text-lg my-auto' /></div>
-  <ul tabIndex={0} className="mt-5 dropdown-content menu bg-base-100 rounded-md z-[1] w-36 p-2 shadow">
+  <ul tabIndex={0} className="mt-5 dropdown-content menu bg-base-100 bg-transparent rounded-md z-[1] w-36 p-2 shadow">
   <a className='flex p-2 gap-2 rounded-md hover:bg-base-300' > <FiUser className='my-auto' />Profile</a>
   <a className='flex p-2 gap-2 rounded-md hover:bg-base-300'> <FiSettings className='my-auto' />Settings </a>
   <a className='flex p-2 gap-2 rounded-md hover:bg-base-300' onClick={handleLogout} > < LuLogOut  className='my-auto' />Logout</a>
