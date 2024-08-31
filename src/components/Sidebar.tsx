@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import "../css/sidebar.css";
 import logo from "../assets/images/Subsum 1@2x.png";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { BiSupport } from "react-icons/bi";
