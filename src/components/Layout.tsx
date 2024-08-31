@@ -8,7 +8,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
   // Map paths to page names
   const pageNames: { [key: string]: string } = {
-    '/dashboard': 'Welcome, Lawal Wahab',
+    '/': 'Welcome, Lawal Wahab',
     '/buy-airtime': 'Buy Airtime',
     '/buy-data': 'Buy Data',
     '/tv-subscription': 'TV Subscription',
@@ -29,14 +29,14 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       </div>
 
       {/* Main content area */}
-      <div className="flex-1 flex flex-col transition-all duration-300 ease-in-out lg:ml-80">
+      <div className="flex-1 bg-white dark:bg-white flex flex-col transition-all duration-300 ease-in-out lg:ml-80">
         {/* Topbar */}
         <div className="top-0 z-10">
           <Topbar pageTitle={pageTitle} />
         </div>
 
         {/* Page content */}
-        <main className="flex-grow p-4 lg:p-6 lg:px-8">
+        <main className="flex-grow bg-white dark:bg-white p-4 lg:p-6 lg:px-8">
           {children}
         </main>
       </div>

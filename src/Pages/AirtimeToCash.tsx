@@ -25,17 +25,17 @@ const AirtimeToCash = () => {
               <CustomSelect />
             </div>
             <div className='flex flex-col'>
-              <label htmlFor="Phone Number" className='text-[#4C689E]'>Phone Number</label>
-              <input type="text" className='input input-bordered w-full border-[#D7E1F4]' placeholder='0809456227' />
+              <label htmlFor="Phone Number"  className='text-[#4C689E]'>Phone Number</label>
+              <input type="text" className=' bg-white dark:bg-white input input-bordered w-full border-[#D7E1F4]' placeholder='0809456227' />
             </div>
           </div>
           <div className="mb-4">
             <label htmlFor="Amount" className='text-[#4C689E]'>Amount</label>
-            <input type="text" className='input input-bordered w-full border-[#D7E1F4]' placeholder='₦5000' />
+            <input type="text" className='input bg-white dark:bg-white input-bordered w-full border-[#D7E1F4]' placeholder='₦5000' />
           </div>
           <div className="mb-4">
             <label htmlFor="Airtime Share Pin" className='text-[#4C689E]'>Airtime Share Pin</label>
-            <input type="text" className='input input-bordered w-full border-[#D7E1F4]' placeholder='₦5000' />
+            <input type="text" className='input bg-white dark:bg-white input-bordered w-full border-[#D7E1F4]' placeholder='₦5000' />
           </div>
           <button className='btn bg-[#4169E1] mt-7 w-full text-white'>Proceed</button>
         </form>

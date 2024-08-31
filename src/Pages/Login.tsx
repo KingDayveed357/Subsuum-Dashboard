@@ -66,7 +66,7 @@ const Login: React.FC = () => {
           <span className="mx-4 text-xs lg:text-sm text-gray-500">Or continue with</span>
           <hr className="flex-grow  border-gray-300" />
         </div>
-        <form onSubmit={handleSubmit} className="dashboard-card mt-6 p-4 lg:p-6 w-full max-w-md">
+        <form onSubmit={handleSubmit} className="dashboard-card bg-white dark:bg-white mt-6 p-4 lg:p-6 w-full max-w-md">
           <div className="mb-4">
             <label htmlFor="email" className="cyan-text text-sm lg:text-base">
               Email Address
@@ -86,7 +86,7 @@ const Login: React.FC = () => {
             </label>
             <label className="input input-bordered flex items-center gap-2 border-[#D7E1F4]">
               <input
-                className={`grow border-0 input input-bordered ${errors.password ? 'border-red-500' : ''}`}
+                className={`flex-1 border-0 input  input-bordered  ml-[-16px] ${errors.password ? 'border-red-500' : ''}`}
                 placeholder="Gabon4351"
                 type={toggle ? 'text' : 'password'}
                 value={password}

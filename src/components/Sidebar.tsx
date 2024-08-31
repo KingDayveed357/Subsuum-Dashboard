@@ -38,7 +38,7 @@ const Sidebar: React.FC = () => {
                     <div className='space-y-4'>
                         <img src={logo} className='w-48' alt="Logo" />
                         <li className='pt-6 '>
-                            <Link to="/dashboard" className={`flex gap-4 p-4 rounded-2xl px-4 cyan-text text-[16px]  ${isActive('/dashboard') ? 'bg-[#4169E1] text-white hover:bg-[#4169E1]' : ''}`}>
+                            <Link to="/" className={`flex gap-4 p-4 rounded-2xl px-4 cyan-text text-[16px]  ${isActive('/dashboard') ? 'bg-[#4169E1] text-white hover:bg-[#4169E1]' : ''}`}>
                             <BsFillGrid1X2Fill className='text-lg'/>  Dashboard
                             </Link>
                         </li>

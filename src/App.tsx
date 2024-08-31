@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Dashboard from './Pages/Dashboard';
 import BuyAirtime from './Pages/BuyAirtime';
 import BuyData from './Pages/BuyData';
@@ -15,8 +15,7 @@ const App: React.FC = () => {
   return (
       <Router>
         <Routes>
-          <Route path="/" element={<Navigate to="/dashboard" />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/buy-airtime" element={<BuyAirtime />} />
           <Route path="/buy-data" element={<BuyData />} />
           <Route path="/tv-subscription" element={<TVSubscription />} />

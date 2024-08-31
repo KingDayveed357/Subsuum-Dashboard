@@ -67,7 +67,7 @@ const Transactions: React.FC = () => {
 
   return (
     <Layout>
-      <section className="p-4">
+      <section className="p-4 bg-white dark:bg-white">
         <div className='mb-8'>
           <label className="input border-[#e7edf8] bg-[#F7F9FD] input-bordered w-full md:w-52 flex items-center gap-1">
             <span><IoFilterOutline /></span>
@@ -128,9 +128,9 @@ const Transactions: React.FC = () => {
                     </div>
                   </td>
                   <th>
-                    <div className="dropdown dropdown-end">
+                    <div className="dropdown dropdown-end ">
                       <div tabIndex={0} role="button" className="btn text-[#4169E1] hover:bg-[#bfc4cf] bg-[#EFF3FB] btn-ghost btn-sm m-1">Open</div>
-                      <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-md w-32 p-2 shadow">
+                      <ul tabIndex={0} className="mt-5 dropdown-content cyan-text menu bg-base-100 rounded-md z-[1] w-36  p-2 shadow">
                         <a className='flex p-2 gap-2 rounded-md hover:bg-base-300' onClick={() => openModal(transaction)}> <LuEye className='my-auto' />View </a>
                         <a className='flex p-2 gap-2 rounded-md hover:bg-base-300'> <RiDeleteBin5Line className='my-auto' />Delete </a>
                       </ul>
