@@ -3,9 +3,9 @@ import { LuEye } from "react-icons/lu";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { TbCurrencyNaira } from "react-icons/tb";
 import { IoFilterOutline } from "react-icons/io5";
-import success from "../assets/images/frame/success.png"
-import initiated from "../assets/images/frame/warning.png"
-import failed from "../assets/images/frame/error.png"
+import success from "../assets/images/frame/success.png";
+import initiated from "../assets/images/frame/warning.png";
+import failed from "../assets/images/frame/error.png";
 import Layout from '../components/Layout';
 
 const transactionData = [
@@ -67,13 +67,13 @@ const Transactions: React.FC = () => {
 
   return (
     <Layout>
-      <section>
+      <section className="p-4">
         <div className='mb-8'>
-          <label className="input border-[#e7edf8] bg-[#F7F9FD] input-bordered w-52 flex items-center gap-1">
+          <label className="input border-[#e7edf8] bg-[#F7F9FD] input-bordered w-full md:w-52 flex items-center gap-1">
             <span><IoFilterOutline /></span>
             <input
               type="text"
-              className="border-0 input input-bordered input-primary max-w-xs"
+              className="border-0 input input-bordered input-primary w-full"
               placeholder="Filter"
               value={filterText}
               onChange={(e) => setFilterText(e.target.value)}
@@ -81,7 +81,7 @@ const Transactions: React.FC = () => {
           </label>
         </div>
         <div className="overflow-x-auto">
-          <table className="table">
+          <table className="table w-full">
             <thead>
               <tr className='text-[15px]'>
                 <th>Service</th>
@@ -98,7 +98,7 @@ const Transactions: React.FC = () => {
                 <tr key={index}>
                   <td>
                     <div className="flex items-center gap-3">
-                      <img src={transaction.icon} alt="" />
+                      <img src={transaction.icon} alt="" className="w-8 h-8" />
                       <div>
                         <div className="font-bold">{transaction.service}</div>
                         <div className="text-sm">{transaction.phoneNumber}</div>
@@ -106,18 +106,18 @@ const Transactions: React.FC = () => {
                     </div>
                   </td>
                   <td>
-                    <div className='my-auto flex'>
-                      <TbCurrencyNaira className='my-auto text-lg' />
+                    <div className='flex items-center'>
+                      <TbCurrencyNaira className='text-lg' />
                       {transaction.amount.toFixed(2)}
                     </div>
                   </td>
                   <td>
-                    <div className='my-auto flex'>
-                      <TbCurrencyNaira className='my-auto text-lg' />
+                    <div className='flex items-center'>
+                      <TbCurrencyNaira className='text-lg' />
                       {transaction.totalAmount.toFixed(2)}
                     </div>
                   </td>
-                  <td className={transaction.status === 'Successful' ? 'text-success font-semibold' : transaction.status === 'Failed' ? 'text-error font-semibold' : 'text-warning font-semibold'}>
+                  <td className={`font-semibold ${transaction.status === 'Successful' ? 'text-success' : transaction.status === 'Failed' ? 'text-error' : 'text-warning'}`}>
                     {transaction.status}
                   </td>
                   <td>{transaction.paymentMethod}</td>
@@ -128,9 +128,9 @@ const Transactions: React.FC = () => {
                     </div>
                   </td>
                   <th>
-                    <div className="dropdown">
+                    <div className="dropdown dropdown-end">
                       <div tabIndex={0} role="button" className="btn text-[#4169E1] hover:bg-[#bfc4cf] bg-[#EFF3FB] btn-ghost btn-sm m-1">Open</div>
-                      <ul tabIndex={0} className="dropdown-content menu bg-base-100 cyan-text rounded-md z-[1] w-[95px] p-2 shadow">
+                      <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-md w-32 p-2 shadow">
                         <a className='flex p-2 gap-2 rounded-md hover:bg-base-300' onClick={() => openModal(transaction)}> <LuEye className='my-auto' />View </a>
                         <a className='flex p-2 gap-2 rounded-md hover:bg-base-300'> <RiDeleteBin5Line className='my-auto' />Delete </a>
                       </ul>
@@ -144,7 +144,7 @@ const Transactions: React.FC = () => {
 
         {/* Modal */}
         <dialog ref={modalRef} id="my_modal_3" className="modal">
-          <div className="modal-box">
+          <div className="modal-box w-11/12 max-w-2xl">
             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" onClick={closeModal}>✕</button>
             <h3 className="font-bold text-lg">Transaction Details</h3>
             {selectedTransaction && (
