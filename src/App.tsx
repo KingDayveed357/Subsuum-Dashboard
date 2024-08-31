@@ -14,19 +14,20 @@ import Login from './Pages/Login';
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/buy-airtime" element={<BuyAirtime />} />
-        <Route path="/buy-data" element={<BuyData />} />
-        <Route path="/tv-subscription" element={<TVSubscription />} />
-        <Route path="/pay-electric-bill" element={<PayElectricBill />} />
-        <Route path="/airtime-to-cash" element={<AirtimeToCash />} />
-        <Route path="/transaction-history" element={<TransactionHistory />} />
-        <Route path="/help-support" element={<HelpSupport />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </Router>
+    // <Router>
+    //   <Routes>
+    //     <Route path="/dashboard" element={<Dashboard />} />
+    //     <Route path="/buy-airtime" element={<BuyAirtime />} />
+    //     <Route path="/buy-data" element={<BuyData />} />
+    //     <Route path="/tv-subscription" element={<TVSubscription />} />
+    //     <Route path="/pay-electric-bill" element={<PayElectricBill />} />
+    //     <Route path="/airtime-to-cash" element={<AirtimeToCash />} />
+    //     <Route path="/transaction-history" element={<TransactionHistory />} />
+    //     <Route path="/help-support" element={<HelpSupport />} />
+    //     <Route path="/login" element={<Login />} />
+    //   </Routes>
+    // </Router>
+    <>Hello world</>
   );
 };
 
