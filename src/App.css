@@ -1,0 +1,27 @@
+.fund-wallet {
+  @apply px-4 xl:px-16;
+  @apply bg-[#4169E1];
+  @apply text-white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  @apply lg:h-12
+}
+
+.dashboard-card{
+ @apply  border-2 border-[#D7E1F4] bg-base-100 w-auto xl:w-[27rem] p-4 rounded-2xl
+}
+
+.blue-text{
+@apply text-[#4169E1]
+}
+
+.cyan-text{
+  @apply text-[#4C689E]
+}
+
+.menu li > a:focus,
+.menu li > a:active {
+    background-color: transparent !important; /* Override with your desired color */
+}
