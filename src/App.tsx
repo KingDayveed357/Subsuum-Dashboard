@@ -1,16 +1,16 @@
 // src/App.tsx
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Dashboard from './Pages/Dashboard';
-import BuyAirtime from './Pages/BuyAirtime';
-import BuyData from './Pages/BuyData';
-import TVSubscription from './Pages/TVSubscription';
-import PayElectricBill from './Pages/PayElectricBill';
-import AirtimeToCash from './Pages/AirtimeToCash';
-import TransactionHistory from './Pages/Transactions';
-import HelpSupport from './Pages/HelpSupport';
-import Login from './Pages/Login';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import Dashboard from './Pages/Dashboard';
+// import BuyAirtime from './Pages/BuyAirtime';
+// import BuyData from './Pages/BuyData';
+// import TVSubscription from './Pages/TVSubscription';
+// import PayElectricBill from './Pages/PayElectricBill';
+// import AirtimeToCash from './Pages/AirtimeToCash';
+// import TransactionHistory from './Pages/Transactions';
+// import HelpSupport from './Pages/HelpSupport';
+// import Login from './Pages/Login';
 
 const App: React.FC = () => {
   return (
