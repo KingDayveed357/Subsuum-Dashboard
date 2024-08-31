@@ -1,8 +1,6 @@
 import { useState } from 'react';
-import rectangle from '../assets/images/Rectangle 340.png';
 import google from '../assets/images/google.png';
 import { ToggleSwitch } from 'flowbite-react';
-import { MdKeyboardArrowLeft } from 'react-icons/md';
 import { GoEyeClosed, GoEye } from 'react-icons/go';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate if using React Router
 

@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import Topbar from '../components/Topbar';
-import Sidebar from '../components/Sidebar';
+import React from 'react';
+
 import { IoArrowForwardOutline } from "react-icons/io5";
 import faq from "../assets/images/frame/faq.png"
 import liveChat from "../assets/images/frame/live-chat.png"

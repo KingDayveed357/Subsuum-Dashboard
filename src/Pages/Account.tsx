@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+
 import Topbar from '../components/Topbar';
 import Sidebar from '../components/Sidebar';
-import savedCards from "../assets/images/saved-cards.png"
-import { FileInput } from 'flowbite-react';
 import gallery from "../assets/images/file-input.png"
 import { CiCamera } from "react-icons/ci";
 import { FiCopy } from "react-icons/fi";
@@ -19,7 +17,7 @@ const Account = () => {
       <div className={`flex-1 flex flex-col  transition-all duration-300 ease-in-out lg:ml-80`}>
         {/* Topbar */}
         <div className="top-0 z-10 ">
-          <Topbar />
+          <Topbar pageTitle=''/>
         </div>
 
         {/* Page content */}
@@ -61,7 +59,7 @@ const Account = () => {
                 <label htmlFor= " Confirm New Password" className='text-[#4C689E]'> Confirm New Password</label>
                 <input type="text" className='input input-bordered w-full text-[#869DCB] border-[#D7E1F4]' placeholder='Enter New Password'/>
                 </div>
-                <button className='btn bg-[#4169E1] w-full text-white'>Submit</button>
+                <button className='btn bg-[#9FB3EF] w-full text-white'>Submit</button>
              </form>
             </div>
           </section>
