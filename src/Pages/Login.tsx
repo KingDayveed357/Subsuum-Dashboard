@@ -34,7 +34,7 @@ const Login: React.FC = () => {
     const formErrors = validateForm();
     if (Object.keys(formErrors).length === 0) {
       // If no errors, proceed to login and redirect to the dashboard
-      navigate('/dashboard'); // Redirect to the dashboard
+      navigate('/'); // Redirect to the dashboard
     } else {
       setErrors(formErrors); // Set errors if validation fails
     }
@@ -72,7 +72,7 @@ const Login: React.FC = () => {
               Email Address
             </label>
             <input
-              className={`input input-bordered w-full border-[#D7E1F4] ${errors.email ? 'border-red-500' : ''}`}
+              className={`input input-bordered w-full bg-transparent border-[#D7E1F4] ${errors.email ? 'border-red-500' : ''}`}
               type="email"
               placeholder="wabdot@gmail.com"
               value={email}
@@ -84,7 +84,7 @@ const Login: React.FC = () => {
             <label htmlFor="password" className="cyan-text text-sm lg:text-base">
               Password
             </label>
-            <label className="input input-bordered flex items-center gap-2 border-[#D7E1F4]">
+            <label className="input input-bordered bg-white flex items-center gap-2 border-[#D7E1F4]">
               <input
                 className={`flex-1 border-0 input  input-bordered  ml-[-16px] ${errors.password ? 'border-red-500' : ''}`}
                 placeholder="Gabon4351"

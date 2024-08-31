@@ -22,7 +22,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pageTitle = pageNames[location.pathname] || 'Dashboard'; // Default to 'Dashboard' if path not found
 
   return (
-    <div className="">
+    <div className="bg-white">
       {/* Sidebar */}
       <div className="fixed top-0 left-0 h-full z-20 transition-width duration-300 ease-in-out overflow-hidden lg:w-80">
         <Sidebar />
