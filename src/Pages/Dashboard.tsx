@@ -47,15 +47,15 @@ const Dashboard: React.FC = () => {
           </div>
 
           <div className="dashboard-card">
-            <div className="flex justify-between">
-              <div className='flex flex-col space-y-2'>
+            <div className="flex gap-3 justify-between">
+              <div className='flex-1  flex flex-col space-y-2'>
                 <p>Total referrals made</p>
                 <span className='text-xl font-semibold'>0</span>
               </div>
 
               <div className='flex flex-col space-y-2'>
                 <p>Current wallet Bonus</p>
-                <span className='text-xl font-semibold'>0.00</span>
+                <span className='text-xl font-semibold'>₦0.00</span>
               </div>
             </div>
             <p className='mt-4 flex gap-1 text-[#4169E1]'>
